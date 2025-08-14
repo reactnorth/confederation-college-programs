@@ -4,8 +4,11 @@ fetch('./program-data.json')
 
 return response.json();
 
-});
+})
 
-
+.then(data => {
+    // This 'data' is the actual JSON object parsed from the response body.
+    console.log(data);
+  });
 
 
